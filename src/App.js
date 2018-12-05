@@ -29,13 +29,17 @@ class App extends Component {
   }
 
   componentDidMount(){
+   this.getPeople();
+  }
+
+  getPeople() {
     axios
-      .get('https://dm20.now.sh/students')
-      .then( res => {
-        this.setState({students: res.data})
-        console.log(res)
-        this.setState({isDataLoaded: true})
-      })
+    .get('https://dm20.now.sh/students')
+    .then( res => {
+      this.setState({students: res.data})
+      console.log(res)
+      this.setState({isDataLoaded: true})
+    })
   }
 
   handleNextClick(){
@@ -117,8 +121,7 @@ class App extends Component {
     // this.setState({students: arr})
     axios.put(`https://dm20.now.sh/students/` + i, editStudent)
     .then(res => {
-      this.setState({student: res.data})
-      this.setState({canEdit: false})
+      this.setState({student: res.data, canEdit: false}, () => this.getPeople())
     })
   }
 

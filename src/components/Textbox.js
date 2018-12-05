@@ -6,8 +6,8 @@ class Textbox extends Component {
   }
 
   render(){
-    const index = this.props.index
-    const info = this.props.students[index]
+    let index = this.props.index
+    let info = this.props.students[index]
     return (
       <body className="textBox">
         <a className="counter">{`${index + 1} of ${this.props.students.length}`}</a>

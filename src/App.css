@@ -3,6 +3,13 @@ div {
   height: 950px;
 }
 
+.navBar{
+  width: 65%;
+  height: 5%;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
 .top {
   background: #60daff;
   height: 100px;
@@ -25,10 +32,10 @@ div {
 }
 
 .textBox {
-  height: 450px;
+  height: 45%;
   background-color: gray;
   margin: 125px auto 0 auto;
-  width: 75%;
+  width: 65%;
   padding: 30px;
   line-height: 1.8;
   text-align: left;
@@ -47,12 +54,12 @@ ul {
 }
 .switch {
   color: gray;
-  margin: 10px 225px;
+  margin: 10px auto;
 }
 
 .switch:hover {
   color: skyblue;
-  cursor: pointer;
+  cursor: default;
 }
 
 #switchRight {
@@ -64,13 +71,19 @@ ul {
 }
 
 button {  
-  font-size: 1.25em;
+  font-size: 1.15em;
+  text-align: center;
   height: 25px;
   width: 100px;
   background-color: #60daff;
   border-color: black;
   border-radius: 30px;
-  margin: 10px 20px;
+  margin: 10px 25px;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: green;
 }
 
 span {

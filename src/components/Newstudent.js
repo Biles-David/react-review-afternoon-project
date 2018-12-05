@@ -23,7 +23,6 @@ class Newstudent extends Component {
   }
 
   render(){
-    const index = this.props.index
     return (
       <body className="textBox">
         <h1>Name: </h1> <input name="name" type='text' onChange={this.handleChange}></input>

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 const Navbottom = props => (
-  <nav>
+  <nav className="navBar">
     <a className="switch"  id="switchLeft" onClick={props.previous}> {"< Previous"} </a>
     <button onClick={props.canEdit}>Edit</button>
     <button onClick={props.handleDelete}> Delete</button>
